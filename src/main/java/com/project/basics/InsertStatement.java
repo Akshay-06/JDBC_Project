@@ -1,19 +1,24 @@
-package com.jdbc.basics;
+package com.project.basics;
 
 import java.sql.Connection;
+
+import com.project.jdbc.DatabaseConfig;
+
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class InsertStatement {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		// TODO Auto-generated method stub
 		
-		String url = "jdbc:mysql://127.0.0.1:3306/defaultdb";
-		String uname = "root";
-		String pass = "Akshay-1029";
+		DatabaseConfig dbConfig = new DatabaseConfig();
+		
+		
+		String url = dbConfig.getProperty("db.url");
+		String uname = dbConfig.getProperty("db.uname");
+		String pass = dbConfig.getProperty("db.pass");
 		
 		String service_name = "Lab Test";
 		int service_fee = 100;

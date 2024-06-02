@@ -1,4 +1,4 @@
-package com.jdbc.learning;
+package com.project.dao;
 
 /**
  * Hello world!
