@@ -1,6 +1,6 @@
 # JDBC Project
 
-This is exploring and all the features of JDBC. The repository contains codde for 
+This is for exploring and learning all the features of JDBC. The repository contains codde for 
 
 1. JDBC Connectivity
 2. Prepared Statements
